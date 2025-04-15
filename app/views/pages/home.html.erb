@@ -1,4 +1,115 @@
-<div>
-  <h1 class="font-bold text-4xl">Pages#home</h1>
-  <p>Find me in app/views/pages/home.html.erb</p>
+<div class="absolute bg-lime-100 grid grid-cols-1 md:grid-cols-2 w-full min-h-screen gap-4">
+    <!-- Primer bloque -->
+    <div class="bg-lime-100 flex flex-col justify-center space-y-2 px-4 md:px-16 py-8 md:py-0 items-center sm:items-start w-full min-h-[50vh] md:h-screen">
+        <p class="text-black font-semibold tracking-wider text-blue-600 uppercase mt-4 md:mt-10 animate-typing-left text-center sm:text-left">
+        A time banking community
+        </p>
+        <h1 class="text-[50px] text-md:text-[100px] leading-[100%] text-md:leading-[90%] tracking-[-1.5px] text-md:tracking-[-4px] font-medium text-black animate-fade-in-up text-center sm:text-left">
+        Exchange & grow with your time
+        </h1>
+        <h2 class="text-thd-color-black thd-max-lg thd-heading-lg">So much more than a screen recorder</h2>
+        
+        <p class="mt-2 md:mt-4 text-sm md:text-base text-black lg:mt-8 sm:text-xl hover:text-blue-600 transition-all duration-500 ease-in-out transform hover:scale-105 animate-fade-in text-center sm:text-left">
+           
+Share your skills others, earn more time for you.
+        </p>
+        <%= link_to new_user_registration_path, class: "inline-flex items-center px-4 md:px-6 py-3 md:py-4 mt-4 md:mt-8 font-semibold text-black transition-all duration-300 bg-yellow-300 hover:bg-gradient-to-r hover:from-yellow-300 hover:via-yellow-400 hover:to-yellow-300 bg-size-200 animate-gradient-x rounded-full lg:mt-16 hover:scale-105 transform animate-bounce-subtle mx-auto sm:mx-0" do %>
+            Join for free
+            <svg class="w-4 h-4 md:w-6 md:h-6 ml-4 md:ml-8 -mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+        <% end %>
+
+
+
+        <div class="flex justify-center w-full mt-4">
+            <p class="text-sm md:text-base text-gray-600 animate-typing-left">
+            Already a member?
+                <%= link_to new_user_session_path, class: "text-black transition-all duration-300 hover:text-blue-600 hover:underline" do %>
+                    Login
+                <% end %>
+            </p>
+        </div>
+
+        <style>
+            @keyframes typing-left {
+                from { width: 0; opacity: 0; }
+                to { width: 100%; opacity: 1; }
+            }
+            .animate-typing-left {
+                overflow: hidden;
+                white-space: nowrap;
+                animation: typing-left 2s ease-out forwards;
+            }
+
+            @keyframes fade-in-up {
+                from {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+            .animate-fade-in-up {
+                animation: fade-in-up 0.8s ease-out forwards;
+            }
+
+            @keyframes fade-in {
+                from { opacity: 0; }
+                to { opacity: 1; }
+            }
+            .animate-fade-in {
+                animation: fade-in 1.5s ease-out forwards;
+            }
+
+            @keyframes bounce-subtle {
+                0%, 100% { transform: translateY(0); }
+                50% { transform: translateY(-3px); }
+            }
+            .animate-bounce-subtle {
+                animation: bounce-subtle 1.5s infinite;
+            }
+        </style>
+    </div>
+
+
+
+    
+    <!-- Segundo bloque -->
+    <div class="bg-lime-100 flex justify-center items-center w-full min-h-[50vh] p-4">
+        <div class="text-center flex flex-col justify-center items-center">
+            <h3 class="text-3xl md:text-4xl font-bold text-gray-800 mb-2 md:mb-4 animate-fade-in-up">Comienza a Aprender Hoy</h3>
+            <p class="text-sm md:text-base text-gray-600 animate-fade-in">Tu viaje comienza aquí</p>
+          
+
+
+        </div>
+    </div>
+  
+    <!-- Tercer bloque -->
+    <div class="bg-lime-100 flex justify-center items-center w-full min-h-[50vh] p-4">
+       
+ <div class="bg-lime-100 flex justify-center items-center w-full h-screen">
+ <div class="w-full h-full flex justify-center items-center perspective-[1000px]">
+   <div class="w-2/3 h-96 bg-red-500 flex justify-center items-center shadow-2xl transform-gpu transition-all duration-800 hover:rotate-x-[-30deg] hover:rotate-y-[-60deg] hover:shadow-2xl">
+     <span class="text-white text-2xl">Puerta</span>
+   </div>
+ </div>
+</div>
+    </div>
+
+
+
+
+
+
+    <!-- Cuarto bloque -->
+    <div class="bg-lime-100 flex justify-center items-center w-full min-h-[50vh] p-4">
+        <div class="text-center">
+            <h3 class="text-3xl md:text-4xl font-bold text-gray-800 mb-2 md:mb-4 animate-fade-in-up">Conéctate con Expertos</h3>
+            <p class="text-sm md:text-base text-gray-600 animate-fade-in">Aprende de los mejores en tu campo</p>
+        </div>
+    </div>
 </div>
